@@ -1,22 +1,22 @@
 # Homelab Infrastructure
 
-This repository documents my personal homelab used to simulate real-world server environments.
+This repository contains a production-style homelab environment designed to simulate real-world infrastructure operations and failure scenarios.
 
-## Overview
-- OS: Ubuntu Server
-- Access: SSH from Windows
-- Storage: LVM-based disk management
-- Hardware: Repurposed laptop server
+## Environment Overview
+- Operating System: Ubuntu Server (LTS)
+- Remote Access: SSH from Windows client
+- Storage: Logical Volume Manager (LVM) with dynamic volume expansion
+- Hardware: Repurposed laptop acting as a dedicated server node
 
-## Goals
-- Practice Linux server administration
-- Simulate production-like failures and recovery
-- Improve infrastructure troubleshooting skills
+## Objectives
+- Practice real-world Linux server operations
+- Simulate and handle infrastructure failure scenarios
+- Design and test backup, recovery, and rollback strategies
 
-## Current Services
-- Nextcloud (self-hosted)
-- NGINX
-- SSH
+## Deployed Services
+- Nextcloud (self-hosted collaboration platform)
+- NGINX (reverse proxy and web server)
+- OpenSSH
 
 ## Incident Reports
-- Nextcloud failed upgrade – recovered using backup
+- Failed Nextcloud upgrade leading to service outage – resolved via full data and database restoration
